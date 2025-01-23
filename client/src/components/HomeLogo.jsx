@@ -6,12 +6,9 @@ import { GeneralContext } from '../context/GeneralContextProvider';
 import Search from './Search';
 
 const HomeLogo = () => {
-
   const {socket} = useContext(GeneralContext);
-
   const [search, setSearch] = useState('');
   const [searchedUser, setSearchedUser] = useState();
-
   const handleSearch = async ()=>{
     await socket.emit('user-search', {username: search});
     setSearch('')
@@ -22,8 +19,6 @@ const HomeLogo = () => {
       setSearchedUser(user);
     });
   },[socket])
-
-
   return (
     <div className="LogoSearch">
        <img className='logoImg' src={logoimg} alt="" />

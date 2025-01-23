@@ -3,7 +3,7 @@ import '../styles/landingpage.css';
 
 import socialeXLogo from '../images/SocialeX.png';
 import About1 from '../images/about-1.png';
-import About2 from '../images/about-2.jpg';
+import About2 from '../images/about-2.png';
 
 import Login from '../components/Login';
 import Register from '../components/Register';
@@ -30,8 +30,8 @@ const LandingPage = () => {
 
             <div className="landing-hero" id='home'>
                 <div className="landing-hero-content">
-                    <h1>SocialeX</h1>
-                    <p>Step into SocialeX, the playground for the wildly imaginative, where vibrant communities thrive and eccentricities are celebrated. </p>
+                    <h1>Talk People</h1>
+                    <p>Step into Talk People, the ultimate playground where creativity knows no bounds and quirkiness is the norm. Join vibrant communities that thrive on imagination and celebrate every unique detail that makes us spectacularly human.🌟 </p>
 
                     <div className="authentication-form">
 
@@ -63,7 +63,7 @@ const LandingPage = () => {
                     <div className="about-1-content">
 
                         <h3>Stay Connected</h3>
-                        <p>SocialeX makes it easy to maintain touch with your old friends, regardless of geographical boundaries. Connect with them on the platform, follow their profiles, and keep up with their updates. Engage with their content, share memories, and reminisce together.</p>
+                        <p>Revamp your friendships with Talk People! Enjoy constant connection with old friends, no matter where they are in the world. Follow their adventures, engage with their stories, and rekindle treasured memories through lively interactions. Let SocialeX be the bridge that keeps you close, even when miles apart📱💬.</p>
                         <a href='#home'>Join now!!</a>
 
                     </div>
@@ -71,7 +71,7 @@ const LandingPage = () => {
                 <div className="about-2">
                     <div className="about-2-content">
                         <h3>Amplify Your Voice</h3>
-                        <p>SocialeX gives you the power to amplify your voice and share your unique perspective with a global audience. Whether you're an artist, a writer, a musician, or a content creator in any other field, SocialeX provides you with the stage to showcase your talent and gain recognition.</p>
+                        <p>Share your voice with the world on Talk People! Whether you're an artist, writer, musician, or content creator, this platform amplifies your perspective. Connect with a global audience, showcase your creativity, and gain the recognition you deserve🎤🌍.</p>
                         <a href='#home'>Join now!!</a>
                     </div>
                     <img src={About2} className='about-2-img' alt="" />
@@ -80,7 +80,7 @@ const LandingPage = () => {
             </div>
 
             <div className="footer">
-                <p>All rights reserved - &#169; SocialeX.com</p>
+                <p>All rights reserved - &#169; Talk People.com</p>
             </div>
 
 

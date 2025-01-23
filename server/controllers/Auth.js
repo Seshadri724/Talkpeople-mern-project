@@ -2,9 +2,6 @@ import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import Users from '../models/Users.js';
 
-
-
-
 const generateToken =(id) =>{
 
     const jwtSecret = 'thisIsTheSceretCodeForTheJWTToken';
@@ -31,7 +28,6 @@ export const register = async (req, res) =>{
 
         const user = await newUser.save();
 
-        // generate jwt token using function we defined at top of the page
         const token = generateToken(user._id);
 
         const userData = {_id: user._id, username: user.username, email:user.email, profilePic:user.profilePic, about: user.about, posts: user.posts, followers: user.followers, following:user.following };
@@ -51,7 +47,6 @@ export const login = async (req, res) =>{
         const isMatch = await bcrypt.compare(password, user.password);
         if(!isMatch) return res.status(400).json({msg: "Invalid credentials"});
 
-        // generate jwt token using function we defined at top of the page
         const token = generateToken(user._id);
         delete user.password;
         const userData = {_id: user._id, username: user.username, email:user.email, profilePic:user.profilePic, about: user.about, posts: user.posts, followers: user.followers, following:user.following };

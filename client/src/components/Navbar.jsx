@@ -10,15 +10,10 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Navbar = () => {
-
   const {isCreatPostOpen, setIsCreatePostOpen, setIsCreateStoryOpen, isNotificationsOpen, setNotificationsOpen} = useContext(GeneralContext);
-
   const navigate = useNavigate();
-
   const profilePic = localStorage.getItem('profilePic');
   const userId = localStorage.getItem('userId');
-
-  
    return (
     <>
     <div className="Navbar">
@@ -28,9 +23,6 @@ const Navbar = () => {
         <TbNotification className="Notifybtn btns" onClick={()=> setNotificationsOpen(!isNotificationsOpen)}/>
         <img className="profile" src={profilePic} alt="" onClick={()=> navigate(`/profile/${userId}`)} />
     </div>
-
-
-
     </>
   )
 }

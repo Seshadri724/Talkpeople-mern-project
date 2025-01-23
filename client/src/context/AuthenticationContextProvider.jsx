@@ -66,9 +66,6 @@ const AuthenticationContextProvider = ({children}) => {
         console.log(err);
     }
   }
-
-
-
   const logout = async () =>{
     
     for (let key in localStorage) {
@@ -79,9 +76,6 @@ const AuthenticationContextProvider = ({children}) => {
     
     navigate('/landing');
   }
-
-
-
   return (
     <AuthenticationContext.Provider value={{login, register, logout, username, setUsername, email, setEmail, password, setPassword }} >{children}</AuthenticationContext.Provider>
   )

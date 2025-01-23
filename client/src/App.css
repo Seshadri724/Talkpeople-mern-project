@@ -29,7 +29,7 @@
     overflow: hidden;
     color: var(--black);
     height: 100%;
-    background-color: #f3f3f3;
+    background-color:rgb(255, 255, 255);
   }
   
   /* .freespace{
@@ -82,9 +82,6 @@
       height: 9vh;
     }
   }
-  
-  
- 
   
   ::-webkit-scrollbar{
     display: none;

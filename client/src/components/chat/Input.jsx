@@ -9,22 +9,16 @@ import axios from 'axios';
 const Input = () => {
 
     const {socket, chatData} = useContext(GeneralContext);
-
     const [text, setText] = useState('');
     const [file, setFile] = useState(null);
-
-    const [uploadProgress, setUploadProgress] = useState();
-
+    const [uploadProgress, setUploadProgress] = useState()
     const userId = localStorage.getItem('userId');
-
-
     const handleSend = async () =>{
 
       if (file){
 
         const storageRef = ref(storage, uuid());
         const uploadTask = uploadBytesResumable(storageRef, file);
-
         uploadTask.on('state_changed', 
         (snapshot) => {
             setUploadProgress((snapshot.bytesTransferred / snapshot.totalBytes) * 100); 
@@ -45,12 +39,9 @@ const Input = () => {
             }catch(err){
                 console.log(err);
             }
-
-
             });
         }
         );
-
       }else{
 
         let date = new Date() 
@@ -59,7 +50,6 @@ const Input = () => {
       }
 
     }
-
   return (
     <div className='input' >
       <input type="text" placeholder='type something...' onChange={e => setText(e.target.value)} value={text} />
@@ -74,5 +64,4 @@ const Input = () => {
     </div>
   )
 }
-
 export default Input

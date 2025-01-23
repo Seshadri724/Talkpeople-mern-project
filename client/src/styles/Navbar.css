@@ -11,11 +11,10 @@
 
 }
 
-
 .btns{
     width: 30px;
-    height: 30px;
-    color: #777e83;
+    height: 50px;
+    color:rgb(5, 6, 6);
     cursor: pointer;
 }
 .Notifybtn{
@@ -31,7 +30,7 @@
     padding-top: 3px;
 }
 .btns :active{
-    color: #1393f5;
+    color:rgb(253, 253, 253);
 }
 
 .Navbar img{
@@ -61,12 +60,13 @@
         position: fixed;
         bottom: 0vh;
         height: 7vh;
-        background-color: rgba(226, 242, 248, 0.443);
+        background-color: rgb(81, 79, 79);
         backdrop-filter: blur(15px);
     }
     .btns{
         width: 35px;
         height: 35px;
+
     }
     .Notifybtn{
         width: 39px;

@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: #f2fcffd9; */
-    background-color: rgba(127, 255, 212, 0);
+    /* background-color:rgba(26, 133, 165, 0.85); */
+    background-color: rgba(22, 25, 22, 0)
 }
 
 .landing-header{
@@ -21,14 +21,14 @@
     z-index: 4;
     align-items: center;
     justify-content:space-between;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 5px;
+    box-shadow: rgb(72, 67, 64) 0px 2px 5px;
 }
 
 .landing-header-logo{
     /* height: 40px; */
 }
 .landing-header-logo img{
-    height: 40px;
+    height: 60px;
 }
 
 .landing-header ul{
@@ -54,16 +54,12 @@
     transform-origin: right;
     transition: color 1s;
     text-decoration: none;
-    color: rgb(0, 45, 83);
+    color: rgb(215, 81, 19);
 }
 
 .landing-header ul li a:hover{
-    color: rgb(0, 127, 231);     
+    color: rgb(239, 85, 13);;     
 }
-
-
-
-
 
 .landing-body{
 
@@ -94,10 +90,10 @@
     font-weight: bolder;
     font-size: 3.5rem;
     margin: 0;
-    color: rgb(0, 108, 197);
+    color: rgb(239, 85, 13);
 }
 .landing-hero-content p{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     margin: 0;
 
@@ -116,18 +112,18 @@
     justify-content: center;
     text-align: center;
     height: max-content;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
-    background-color: rgba(255, 255, 255, 0.263);
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgb(15, 153, 232) 0px 2px 8px 0px;
     border-radius: 0.5rem;
 
 }
 .authForm h2{
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(0, 79, 135);
+    color: rgb(236, 59, 5);
     font-size: 1.8rem;
 }
 .authFormInputs {
@@ -136,11 +132,11 @@
 }
 
 .authFormInputs label{
-    color: rgb(0, 61, 101);
+    color: rgb(236, 59, 5);
     /* padding: 0; */
 }
 .authFormInputs input{
-    color: rgb(0, 61, 101);
+    color: rgb(243, 113, 13);
     border: none;
     outline: none;
     background-color: rgba(231, 235, 235, 0);
@@ -152,7 +148,7 @@
 }
 
 .authForm button{
-    background-color: rgb(0, 108, 197);
+    background-color: rgb(225, 75, 11);
     font-weight: bold;
     color: rgb(246, 251, 255);
     height: 50px;
@@ -163,14 +159,9 @@
 }
 .authForm p span{
     margin-top: 5%;
-    color: rgb(0, 68, 107);
+    color: rgba(238, 99, 13, 0.9);
     cursor: pointer;
 }
-
-
-
-
-
 
 
 
@@ -208,7 +199,7 @@
     width: 5vw;
     transform: skew(-15deg);
     /* background-color: aqua; */
-    background: linear-gradient(145deg, rgba(0,104,205,1) 0%, rgb(42, 161, 240) 55%, rgb(255, 110, 243) 100%);
+    background: linear-gradient(145deg, rgb(225, 94, 13) 0%, rgb(42, 161, 240) 55%, rgb(255, 110, 243) 100%);
     margin-right: 35px;
     margin-left: 5px;
     animation-name: left;
@@ -221,7 +212,7 @@
     height: 50vh;
     transform: skew(-15deg);
     /* background-color: aqua; */
-    background: linear-gradient(145deg, rgba(0,104,205,1) 0%, rgb(42, 161, 240) 55%, rgb(255, 110, 243) 100%);
+    background: linear-gradient(145deg, rgb(181, 97, 55) 0%, rgb(42, 161, 240) 55%, rgb(255, 110, 243) 100%);
     margin: 0;
     padding: 0;
     position: relative;
@@ -229,8 +220,6 @@
     animation-name: right;
     animation-duration: 3s;
 }
-
-
 
 @keyframes hero-img {
     from{ top: 100vh;
@@ -260,13 +249,6 @@
 }
 
 
-
-
-
-
-
-
-
 .landing-about{
     height: 170vh;
     width: 100%;
@@ -282,7 +264,7 @@
 
 .landing-about .about-1 img{
     width: 50%;
-    border: 1px solid #c0dcf0d3;
+    border: 1px solidrgb(233, 95, 16);
     border-radius: 0 10rem 0 0;
     height: 80vh;
 }
@@ -298,10 +280,12 @@
 .landing-about .about-1 .about-1-content h3{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    color: rgb(239, 85, 13);
+
 
 }
 .landing-about .about-1 .about-1-content p{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -310,7 +294,7 @@
     width: 30%;
     padding: 10px 30px;
     border: none;
-    background: linear-gradient(145deg, rgba(0,104,205,1) 0%, rgb(42, 134, 240) 55%, rgb(249, 122, 239) 100%);
+    background: linear-gradient(145deg, rgb(227, 94, 5) 0%, rgb(42, 134, 240) 55%, rgb(249, 122, 239) 100%);
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
@@ -324,10 +308,10 @@
 }
 
 .landing-about .about-2 img{
-    width: 50%;
-    border: 1px solid #c0dcf0d3;
+    width: 31%;
+    border: 1px solidrgba(234, 105, 12, 0.83);
     border-radius: 0 0 0 10rem;
-    height: 80vh;
+    height: 90vh;
 }
 
 .landing-about .about-2 .about-2-content{
@@ -335,6 +319,7 @@
     height: 100%;
     padding: 5%;
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
 }
@@ -342,10 +327,12 @@
 .landing-about .about-2 .about-2-content h3{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    color: rgb(244, 105, 18);
+
 
 }
 .landing-about .about-2 .about-2-content p{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -354,7 +341,7 @@
     width: 30%;
     padding: 10px 30px;
     border: none;
-    background: linear-gradient(145deg, rgba(0,104,205,1) 0%, rgb(42, 134, 240) 55%, rgb(249, 122, 239) 100%);
+    background: linear-gradient(145deg, rgb(205, 113, 0) 0%, rgb(42, 134, 240) 55%, rgb(249, 122, 239) 100%);
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
@@ -370,5 +357,5 @@
 }
 
 .footer p{
-    color: rgb(0, 69, 122);
+    color: rgb(18, 7, 1);
 }

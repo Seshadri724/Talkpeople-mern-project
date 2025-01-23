@@ -14,7 +14,7 @@
 }
 .Search{
     display: flex;
-    background-color: #f5fcffe8;
+    background-color:rgba(247, 242, 242, 0.87);
     border-radius: 10px;
     padding: 5px;
     height: 6vh;
@@ -36,7 +36,7 @@
     font-size: 1.3rem;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(106.23deg, #68caf4, #1393f5 100%);
+    background: linear-gradient(106.23deg,rgb(245, 64, 19), #1393f5 100%);
     border-radius: 5px;
     padding: 5px 5px;
     color: white;
@@ -61,7 +61,7 @@
         align-items: center;
         width: 100%;
         justify-content: center;
-        background-color: rgba(226, 242, 248, 0.443);
+        background-color: hsla(273, 70.90%, 41.80%, 0.44);
         backdrop-filter: blur(15px);
     }
     .logoImg {

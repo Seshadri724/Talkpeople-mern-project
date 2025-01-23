@@ -92,8 +92,6 @@ const Stories = () => {
             </div>
         }
 
-    
-    
     </div>
   )
 }

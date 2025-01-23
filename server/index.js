@@ -50,8 +50,7 @@ io.on("connection", (socket) =>{
 // mongoose setup
 
 const PORT = 6001;
-
-mongoose.connect('mongodb://localhost:27017/socialeX', { 
+mongoose.connect('mongodb://localhost:27017/Social', { 
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }

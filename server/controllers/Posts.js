@@ -12,7 +12,6 @@ export const fetchAllPosts = async (req, res) =>{
         res.status(500).json({ error: 'Server error' });
       }
 } 
-
 export const fetchUserName = async (req, res) =>{
   try {
       const userId = req.body.userId;

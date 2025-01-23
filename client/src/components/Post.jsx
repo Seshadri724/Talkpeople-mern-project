@@ -13,10 +13,7 @@ import { useNavigate } from 'react-router-dom';
 const Post = () => {
 
     const navigate = useNavigate();
-
     const {socket} = useContext(GeneralContext);
-
-
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -32,25 +29,16 @@ const Post = () => {
           console.error(error);
         }
       };
-
-
-
-    //   Like
-
     const handleLike = (userId, postId) =>{
         socket.emit('postLiked', {userId, postId});
 
     }
-
     const handleUnLike = (userId, postId) =>{
         socket.emit('postUnLiked', {userId, postId});
 
     }
-
-    
     useEffect(()=>{
         socket.on("likeUpdated", ()=>{
-            // alert("likedd");
         })
 
         socket.on('userFollowed', ({following})=>{
@@ -60,23 +48,15 @@ const Post = () => {
         })
 
     },[socket])
-
-
     const handleFollow = async (userId) =>{
-        // ownId = current user Id
-        // followingUserId = user you want to follow
         socket.emit('followUser', {ownId: localStorage.getItem('userId'), followingUserId: userId});
     }
-
-
 
     const [comment, setComment] = useState('');
 
     const handleComment = (postId, username)=>{
         socket.emit('makeComment', {postId, username, comment});
     }
-
-
 
   return (
     <div className='postsContainer'>
@@ -101,19 +81,14 @@ const Post = () => {
              }
 
         </div>
-
         { post.fileType === 'photo'?
                 
                 <img src={post.file} className='postimg' alt="" />
-            
                 :
-                
                 <video id="videoPlayer" className='postimg' controls autoPlay muted>
                     <source src={post.file} />
                 </video>
-                
                 }
-
         <div className="postReact">
             <div className="supliconcol">
 
@@ -121,14 +96,9 @@ const Post = () => {
                     post.likes.includes(localStorage.getItem('userId')) ?
 
                     <AiTwotoneHeart className='support reactbtn'  onClick={() => handleUnLike(localStorage.getItem('userId'), post._id)}/>
-
                     :
-
                     <AiOutlineHeart className='support reactbtn'  onClick={() => handleLike(localStorage.getItem('userId'), post._id)}/>
                 }
-
-
-                
                 <label htmlFor="support" className='supportCount'>{post.likes.length}</label>
             </div>
             {/* <BiCommentDetail className='comment reactbtn' /> */}
@@ -138,9 +108,6 @@ const Post = () => {
                 <label htmlFor="place" className='place'>{post.location}</label>
             </div>
         </div>
-
-        
-
         <div className="detail">
             <div className='descdataWithBtn'>
                 <label htmlFor='username' className="desc labeldata" id='desc'> 

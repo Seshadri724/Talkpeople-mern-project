@@ -1,7 +1,7 @@
 .searchContainer{
     width: 20vw;
     height: fit-content;
-    background-color: rgba(158, 202, 228, 0.155);
+    background-color: rgb(102, 201, 209);
     position: absolute;
     top: 10vh;
     left: 2vw;
@@ -9,6 +9,7 @@
 }
 
 .searchedUserInfo {
+    font-weight:bold;
     display: flex;
     align-items: center;
     margin: 20px 20px;

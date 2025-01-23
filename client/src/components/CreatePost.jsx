@@ -7,11 +7,9 @@ import {ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import {storage} from '../firebase.js';
 import { v4 as uuidv4 } from 'uuid';
 
-
 const CreatePost = () => {
 
     const {isCreatPostOpen, setIsCreatePostOpen} = useContext(GeneralContext);
-
     const [postType, setPostType] = useState('photo');
     const [postDescription, setPostDescription] = useState('');
     const [postLocation, setPostLocation] = useState('');
@@ -56,17 +54,10 @@ const CreatePost = () => {
             }catch(err){
                 console.log(err);
             }
-
-
             });
         }
         );
-
-
     }
-
-
-
   return (
     <>
         <div className="createPostModalBg" style={isCreatPostOpen? {display: 'contents'} : {display: 'none'}} >
