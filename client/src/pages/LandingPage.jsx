@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/landingpage.css';
 
-import socialeXLogo from '../images/SocialeX.png';
+import socialeXLogo from '../images/Talk People.png';
 import About1 from '../images/about-1.png';
 import About2 from '../images/about-2.png';
 
@@ -17,7 +17,7 @@ const LandingPage = () => {
     <div className='landingPage'>
         
         <div className="landing-header">
-            <span className="landing-header-logo"><img src={socialeXLogo} alt="" /></span>
+            <span className="landing-header-logo"><img src={Talk People} alt="" /></span>
             <ul>
                 <li className='header-li'><a href="#home">Home</a></li>
                 <li className='header-li'><a href="#about">About</a> </li>
